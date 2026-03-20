@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio XP</title>
+    <style>
+        body {
+            background-image: url(imagens/fundo.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            cursor: url(/glove/Glove\ Normal.cur), auto;
+
+        }
+
+        a {
+            cursor: url(/glove/Glove\ Link.cur), pointer;
+        }
+
+        .barra {
+            /*a barra do windowns, nao serve pra nada, a principio.*/
+            position: fixed;
+
+            bottom: 0;
+            width: 100vw;
+
+            height: 3vw;
+
+            display: block;
+        }
+
+        .grade {
+            /*Aqui é a "tabela" que eu usei para deixa os icones no seu lugar.*/
+            padding: 30px;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 100px);
+            grid-template-rows: repeat(auto-fill, 110px);
+            /*O repeat junto do autofill funcionamm pra fazer o suficiente pra ocupar a tela tlgd*/
+
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            /*esses dois em conjunto serve pra tipo alinha de cima pra baixo o texto e a imagem dentro do icone :o*/
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            /* pra nao ter aparencia de link*/
+            color: white;
+            transition: 0.2s;
+            /* pro hover nao ser "seco" e ter um fade in*/
+            padding: 5px;
+        }
+
+        .icon:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+        }
+
+        .icon span {
+            font-family: Tahoma, sans-serif;
+            font-size: 12px;
+            text-shadow: 1px 1px 2px black;
+            /* eu usei o span em vez de criar uma div por exemplo, pq o span nao cria um bloco separado, funciona tipo siolado do resto.*/
+        }
+
+        .icon img {
+            /*auto explicativo*/
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px;
+        }
+        h1{
+            color: black;
+            font-family: Tahoma, sans-serif;
+            position: fixed;
+            right: 400px;
+            max-width: 200px;
+            max-height: 200px;
+            bottom: 200px;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 5px;
+            
+        }
+        .clippy{
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+            width: 350px;
+            height: 350px;
+            
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <img class="barra" src="/imagens/barra.jpg">
+    <div class="grade">
+        <a href="sobremim.html" class="icon">
+            <img src="imagens/sobre.png">
+            <span>sobre_mim.txt</span>
+        </a>
+        <a href="https://github.com/machadopng" target="_blank" class="icon">
+            <img src="imagens/github.png">
+            <span>meu github</span>
+        </a>
+        <a href="indexharry.html" class="icon">
+            <img src="imagens/harry.png">
+            <span>harry potter</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="icon">
+            <img src="imagens/bonzi.png">
+            <span>bonzi.exe</span>
+        </a>
+        <h1>Bem vindo ao meu portifólio acadêmico ^_^. Divirta-se nessa simulação básica da área de trabalho do Windowns XP!</h1>
+        <img src="/imagens/Clippit.png" class="clippy">
+
+    </div>
+</body>
+
+</html>
